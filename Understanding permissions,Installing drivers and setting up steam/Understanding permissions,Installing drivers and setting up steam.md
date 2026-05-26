@@ -1,3 +1,0 @@
-## Understanding permissions 
-- Try doing 
-- 
