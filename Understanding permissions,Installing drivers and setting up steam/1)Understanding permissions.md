@@ -1,6 +1,9 @@
 ## Understanding permissions 
 - Every file on Linux has 3 permission groups 
 - 1) owner 2) group 3) other
+- owner:user who created this file 
+- group:every user on a system belongs to a group,when you create a user it makes a group with the same name. file gets assigned to that group
+- other: any other user that is neither a owner not belongs to the file group
 - Each group can have 3 permissions:
   1)r(read) 2)w(write) 3)x(execute)
 - Now open your terminal and run 
