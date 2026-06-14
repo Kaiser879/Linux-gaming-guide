@@ -2,11 +2,11 @@
 A Linux gaming guide
 
 Contents
-1 What is Linux? 4
-1.1 How a Linux System Is Structured 
-1.2 What is a Distribution?
-1.3 Why Linux Matters 
-1.4 Linux and Gaming 
+1) What is Linux? 4
+1.1) How a Linux System Is Structured 
+1.2) What is a Distribution?
+1.3) Why Linux Matters 
+1.4) Linux and Gaming 
 2 Installing Linux
 2.1 Choosing a Distro 
 2.1.1 Why CachyOS? 
