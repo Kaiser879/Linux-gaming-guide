@@ -5,9 +5,9 @@ what systemd calls "service" was named daemon: any program that runs as a "backg
 ## What is systemd
 systemd is a software suite for system and service management on Linux built to unify service configuration and behavior across Linux distributions. 
 As the first userspace process started by the Linux kernel (PID 1), systemd is responsible for initializing the system and starting the services required for a functioning operating system.
-Controversial to the traditional UNIX philosophy of "do one thing well" systemd is not limited to just initialization It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.
+Controversial to the traditional UNIX philosophy of "do one thing well" systemd is not just limited to initialization but It also provides various daemons and utilities, including device management, login management, network connection management, and event logging.
 
-### What is service unit 
+### What is a service unit 
 systemd works on units , units are objects that systemd manages. A unit is a configuration file that tells systemd how to manage a object.
 
 ```bash
@@ -62,11 +62,11 @@ journalctl -xe                   # recent errors, system-wide
 ```
 
 
-#### Something is not working
+#### if Something is not working
 general flow for troubleshooting is
-- systemctl status <service>   check if its running or disabled
--  not running then start systemctl start <service>
-- journalctl -u <service> -b  if it throws error at start to inspect what is wrong
-- use logout while asking for help related for service faliure online.
-- 
-   
+- ```bash
+  1) systemctl status <service>  #check if it is running
+  2) systemctl start <service> #use this to start the service if its not running
+  3) systemctl enable <service> #if check says the service is diabled to enable it 
+  4) journalctl -u <service> -b # inspect the journal to see the problem 
+  5) if you cant figure it out yourself then paste the journal output in a online forum while asking for help .
